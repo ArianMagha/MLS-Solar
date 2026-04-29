@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AML Solar - Economia e Sustentabilidade com Energia Solar</title>
+    <title>AML Solar - Projetos de Alta Performance com Tecnologia Intelbras</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Lucide Icons (via CDN) -->
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
@@ -16,89 +16,143 @@
         .text-solar-blue { color: #1e3a8a; }
         .bg-solar-green { background-color: #22c55e; }
         .hover-solar-green:hover { background-color: #16a34a; }
-        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .img-card:hover img { transform: scale(1.05); }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Header / Navbar -->
-    <header class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
                 <div class="bg-solar-blue p-2 rounded-lg">
                     <i data-lucide="sun" class="text-yellow-400 w-6 h-6"></i>
                 </div>
-                <!-- Nome da Empresa Atualizado -->
                 <span class="text-2xl font-bold text-solar-blue tracking-tight">AML Solar</span>
             </div>
-            <div class="hidden md:flex items-center gap-8 font-medium">
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm">
                 <a href="#beneficios" class="hover:text-blue-700 transition">Benefícios</a>
+                <a href="#portfolio" class="hover:text-blue-700 transition">Nosso Portfólio</a>
                 <a href="#orcamento" class="bg-solar-blue text-white px-6 py-2 rounded-full hover:bg-blue-800 transition shadow-lg">Solicitar Orçamento</a>
             </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <!-- Overlay suave para legibilidade -->
-            <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent z-10"></div>
-            <!-- Imagem de fundo simulada -->
-            <div class="w-full h-full bg-[url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center"></div>
+    <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-white">
+        <div class="absolute inset-0 z-0 opacity-10">
+            <div class="w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
         </div>
 
         <div class="container mx-auto px-6 relative z-20">
-            <div class="max-w-2xl">
-                <h1 class="text-4xl md:text-6xl font-bold text-solar-blue leading-tight mb-6">
-                    Reduza sua conta de luz em até <span class="text-green-600">95%</span> hoje mesmo.
-                </h1>
-                <p class="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed">
-                    Invista no futuro da sua família ou empresa com a AML Solar. Energia limpa, renovável e com retorno garantido.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#orcamento" class="inline-flex justify-center items-center bg-solar-green text-white font-bold px-8 py-4 rounded-xl shadow-xl hover:scale-105 transition-all duration-300 gap-2">
-                        Solicitar Orçamento Grátis
-                        <i data-lucide="chevron-right" class="w-5 h-5"></i>
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-xs font-bold mb-6 uppercase tracking-wider">
+                        <i data-lucide="shield-check" class="w-4 h-4"></i>
+                        Parceiro Especialista Intelbras
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-solar-blue leading-tight mb-6">
+                        Energia Solar com Tecnologia <span class="text-green-600">Intelbras</span>.
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-10 leading-relaxed max-w-xl">
+                        A <strong>AML Solar</strong> combina engenharia de precisão com os melhores equipamentos do mercado. Economize até 95% na sua conta com a garantia e segurança que só a Intelbras oferece.
+                    </p>
+                    <a href="#orcamento" class="inline-flex justify-center items-center bg-solar-green text-white font-bold px-10 py-5 rounded-2xl shadow-2xl hover:scale-105 transition-all duration-300 gap-3 text-lg">
+                        Quero meu Orçamento Grátis
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
                     </a>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <img src="Casa1.jpg" alt="Instalação AML Solar" class="rounded-[2rem] shadow-2xl border-8 border-white">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl hidden md:block">
+                        <p class="text-solar-blue font-bold text-xl">+ de 500kWp</p>
+                        <p class="text-gray-500 text-sm">Instalados com sucesso</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Benefícios Section -->
-    <section id="beneficios" class="py-24 bg-white">
+    <!-- Marcas / Intelbras Section -->
+    <div class="bg-gray-100 py-10 border-y border-gray-200">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-8">
+            <span class="text-gray-400 font-semibold uppercase tracking-widest text-sm">Tecnologia Certificada:</span>
+            <div class="flex items-center gap-2 grayscale hover:grayscale-0 transition cursor-default">
+                <span class="text-2xl font-black text-gray-700">intelbras</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 bg-white">
         <div class="container mx-auto px-6">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-solar-blue mb-4">Por que escolher a AML Solar?</h2>
-                <p class="text-gray-500">A tecnologia que mais cresce no Brasil oferece vantagens imediatas para o seu bolso e para o planeta.</p>
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div class="max-w-2xl">
+                    <h2 class="text-3xl md:text-5xl font-bold text-solar-blue mb-4">Nosso Portfólio</h2>
+                    <p class="text-gray-500 text-lg">Confira alguns dos nossos projetos recentes em residências e empresas de diversos setores.</p>
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="p-8 rounded-3xl bg-blue-50 border border-blue-100 hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200">
-                        <i data-lucide="trending-down" class="text-white w-7 h-7"></i>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Projeto 1 -->
+                <div class="img-card group relative overflow-hidden rounded-3xl bg-gray-200 aspect-[4/3] shadow-lg">
+                    <img src="Empresa1.jpg" alt="Projeto Concessionária" class="w-full h-full object-cover transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <p class="text-white font-bold">Setor Automotivo</p>
+                        <p class="text-gray-300 text-xs text-blue-200">Equipamentos Intelbras</p>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-solar-blue">Economia Radical</h3>
-                    <p class="text-gray-600">Livre-se dos aumentos constantes nas tarifas de energia e pague apenas o mínimo na sua fatura.</p>
                 </div>
-
-                <!-- Card 2 -->
-                <div class="p-8 rounded-3xl bg-green-50 border border-green-100 hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-14 h-14 bg-green-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-green-200">
-                        <i data-lucide="leaf" class="text-white w-7 h-7"></i>
+                <!-- Projeto 2 -->
+                <div class="img-card group relative overflow-hidden rounded-3xl bg-gray-200 aspect-[4/3] shadow-lg">
+                    <img src="Empresa2.jpg" alt="Projeto Industrial" class="w-full h-full object-cover transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <p class="text-white font-bold">Auto Mecânica</p>
+                        <p class="text-gray-300 text-xs text-blue-200">Performance Industrial</p>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-solar-blue">Sustentabilidade</h3>
-                    <p class="text-gray-600">Gere sua própria energia através de uma fonte limpa, inesgotável e reduza sua pegada de carbono.</p>
                 </div>
-
-                <!-- Card 3 -->
-                <div class="p-8 rounded-3xl bg-yellow-50 border border-yellow-100 hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-14 h-14 bg-yellow-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-yellow-200">
-                        <i data-lucide="home" class="text-white w-7 h-7"></i>
+                <!-- Projeto 3 -->
+                <div class="img-card group relative overflow-hidden rounded-3xl bg-gray-200 aspect-[4/3] shadow-lg">
+                    <img src="empresa3.jpg" alt="Projeto Comercial" class="w-full h-full object-cover transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <p class="text-white font-bold">Oficina Mecânica</p>
+                        <p class="text-gray-300 text-xs text-blue-200">Geração de Alta Escala</p>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-solar-blue">Valorização Imobiliária</h3>
-                    <p class="text-gray-600">Imóveis com sistemas fotovoltaicos são mais desejados e podem valorizar em até 10% no mercado.</p>
+                </div>
+                <!-- Projeto 4 -->
+                <div class="img-card group relative overflow-hidden rounded-3xl bg-gray-200 aspect-[4/3] shadow-lg">
+                    <img src="Casa1.jpg" alt="Projeto Residencial" class="w-full h-full object-cover transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <p class="text-white font-bold">Residência de Alto Padrão</p>
+                        <p class="text-gray-300 text-xs text-blue-200">Economia e Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios / Por que Intelbras? -->
+    <section id="beneficios" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-solar-blue mb-4">Diferenciais AML Solar + Intelbras</h2>
+                <div class="w-20 h-1.5 bg-solar-green mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-xl transition-all">
+                    <i data-lucide="award" class="text-solar-green w-12 h-12 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4 text-solar-blue">Garantia Nacional</h3>
+                    <p class="text-gray-600">Utilizamos Intelbras pela segurança de uma garantia real no Brasil, com suporte técnico ágil e eficiente.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-xl transition-all">
+                    <i data-lucide="cpu" class="text-solar-green w-12 h-12 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4 text-solar-blue">Eficiência Superior</h3>
+                    <p class="text-gray-600">Inversores e módulos com as maiores certificações de eficiência, garantindo geração mesmo em dias nublados.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-xl transition-all">
+                    <i data-lucide="app-window" class="text-solar-green w-12 h-12 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4 text-solar-blue">Monitoramento Remoto</h3>
+                    <p class="text-gray-500">Acompanhe a geração do seu sistema em tempo real pelo seu smartphone com o aplicativo oficial.</p>
                 </div>
             </div>
         </div>
@@ -106,50 +160,35 @@
 
     <!-- Formulário Section -->
     <section id="orcamento" class="py-24 bg-solar-blue relative overflow-hidden">
-        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 bg-green-500/20 rounded-full blur-3xl"></div>
-
         <div class="container mx-auto px-6 relative z-10">
-            <div class="flex flex-col lg:flex-row items-center gap-16">
-                <div class="lg:w-1/2 text-white text-center lg:text-left">
-                    <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">Pronto para começar a economizar?</h2>
-                    <p class="text-blue-100 text-lg mb-8">
-                        Preencha os dados e receba uma análise técnica da AML Solar. Nossa equipe entrará em contato via WhatsApp.
-                    </p>
-                    <div class="space-y-4 inline-block text-left">
-                        <div class="flex items-center gap-3">
-                            <i data-lucide="check-circle" class="text-green-400"></i>
-                            <span>Orçamento 100% gratuito</span>
+            <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2 text-white">
+                    <h2 class="text-4xl font-bold mb-6">Faça um estudo gratuito para seu imóvel</h2>
+                    <p class="text-blue-200 text-lg mb-8 italic">"Nossa missão é entregar a melhor solução em energia limpa com o padrão de qualidade AML Solar."</p>
+                    <div class="flex items-center gap-4 text-sm font-semibold">
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="check-circle" class="text-green-400 w-5 h-5"></i>
+                            Análise Técnica
                         </div>
-                        <div class="flex items-center gap-3">
-                            <i data-lucide="check-circle" class="text-green-400"></i>
-                            <span>Análise de viabilidade técnica</span>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="check-circle" class="text-green-400 w-5 h-5"></i>
+                            Projeto Completo
                         </div>
                     </div>
                 </div>
 
-                <div class="lg:w-1/2 w-full max-w-xl">
-                    <div class="bg-white p-8 md:p-10 rounded-[2rem] shadow-2xl">
-                        <form id="solarForm" class="space-y-6">
-                            <div>
-                                <label class="block text-sm font-semibold text-gray-700 mb-2">Nome Completo</label>
-                                <input type="text" id="name" required placeholder="Ex: João Silva" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-solar-blue focus:border-transparent outline-none transition">
+                <div class="lg:w-1/2 w-full">
+                    <div class="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl">
+                        <form id="solarForm" class="space-y-5">
+                            <input type="text" id="name" required placeholder="Nome Completo" class="w-full px-5 py-4 rounded-2xl border border-gray-200 outline-none focus:ring-2 focus:ring-solar-blue transition bg-gray-50">
+                            <input type="tel" id="phone" required placeholder="WhatsApp com DDD" class="w-full px-5 py-4 rounded-2xl border border-gray-200 outline-none focus:ring-2 focus:ring-solar-blue transition bg-gray-50">
+                            <div class="relative">
+                                <span class="absolute left-5 top-4 text-gray-400">R$</span>
+                                <input type="number" id="consumption" required placeholder="Valor da última conta" class="w-full pl-12 pr-5 py-4 rounded-2xl border border-gray-200 outline-none focus:ring-2 focus:ring-solar-blue transition bg-gray-50">
                             </div>
-                            
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label class="block text-sm font-semibold text-gray-700 mb-2">WhatsApp</label>
-                                    <input type="tel" id="phone" required placeholder="(00) 00000-0000" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-solar-blue focus:border-transparent outline-none transition">
-                                </div>
-                                <div>
-                                    <label class="block text-sm font-semibold text-gray-700 mb-2">Consumo Médio (R$)</label>
-                                    <input type="number" id="consumption" required placeholder="Ex: 500" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-solar-blue focus:border-transparent outline-none transition">
-                                </div>
-                            </div>
-
-                            <button type="submit" class="w-full bg-solar-green text-white font-bold py-4 rounded-xl shadow-lg hover:bg-green-600 transition-all transform active:scale-95 flex justify-center items-center gap-2">
+                            <button type="submit" class="w-full bg-solar-green text-white font-bold py-5 rounded-2xl shadow-lg hover:bg-green-600 transition-all flex justify-center items-center gap-3 text-lg">
+                                Solicitar Análise Grátis
                                 <i data-lucide="send" class="w-5 h-5"></i>
-                                Finalizar e Receber Orçamento
                             </button>
                         </form>
                     </div>
@@ -159,59 +198,40 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 bg-gray-900 text-gray-400 border-t border-gray-800">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
-                <div class="flex items-center gap-2">
-                    <div class="bg-blue-600 p-1.5 rounded">
-                        <i data-lucide="sun" class="text-white w-5 h-5"></i>
-                    </div>
-                    <span class="text-xl font-bold text-white tracking-tight">AML Solar</span>
-                </div>
-                
-                <div class="text-sm text-center md:text-right">
-                    <p>&copy; 2026 AML Solar Energia Renovável. Todos os direitos reservados.</p>
-                </div>
+    <footer class="py-12 bg-gray-950 text-gray-500">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center items-center gap-2 mb-6">
+                <i data-lucide="sun" class="text-yellow-400 w-6 h-6"></i>
+                <span class="text-2xl font-bold text-white">AML Solar</span>
             </div>
+            <p class="mb-4">Especialista em Energia Solar Fotovoltaica e Soluções Intelbras.</p>
+            <p class="text-xs">&copy; 2026 AML Solar - Todos os direitos reservados.</p>
         </div>
     </footer>
 
     <script>
         lucide.createIcons();
 
-        // Configurações da AML Solar
         const WHATSAPP_CONFIG = {
-            number: '5514998834446', 
+            number: '5514998834446', // SUBSTITUA PELO SEU NÚMERO
             companyName: 'AML Solar'
         };
 
-        const solarForm = document.getElementById('solarForm');
-
-        solarForm.addEventListener('submit', function(e) {
+        document.getElementById('solarForm').addEventListener('submit', function(e) {
             e.preventDefault();
-
             const name = document.getElementById('name').value;
             const phone = document.getElementById('phone').value;
             const consumption = document.getElementById('consumption').value;
 
-            const message = encodeURIComponent(
-                `Olá, *${WHATSAPP_CONFIG.companyName}*!\n\n` +
-                `Gostaria de solicitar um orçamento para energia solar.\n\n` +
-                `*Dados:* \n` +
-                `• *Nome:* ${name}\n` +
-                `• *WhatsApp:* ${phone}\n` +
-                `• *Consumo:* R$ ${consumption}`
-            );
+            const text = `Olá, *${WHATSAPP_CONFIG.companyName}*!\n\n` +
+                         `Vi o portfólio de vocês e gostaria de uma análise para meu imóvel.\n\n` +
+                         `*Dados do Cliente:*\n` +
+                         `• *Nome:* ${name}\n` +
+                         `• *WhatsApp:* ${phone}\n` +
+                         `• *Valor da Conta:* R$ ${consumption}\n\n` +
+                         `Tenho interesse na tecnologia *Intelbras*.`;
 
-            const waLink = `https://wa.me/${WHATSAPP_CONFIG.number}?text=${message}`;
-
-            const btn = e.target.querySelector('button');
-            btn.innerHTML = 'Redirecionando...';
-            btn.disabled = true;
-
-            setTimeout(() => {
-                window.location.href = waLink;
-            }, 800);
+            window.location.href = `https://wa.me/${WHATSAPP_CONFIG.number}?text=${encodeURIComponent(text)}`;
         });
     </script>
 </body>
